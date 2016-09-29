@@ -1,4 +1,4 @@
-"F:\Source\IAR MSP\Test\main.c"
+"F:\Source\IAR MSP\EnI\Test\main.c"
 -std=c99
 -ferror-limit=100
 -I

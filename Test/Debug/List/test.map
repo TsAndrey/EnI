@@ -2,16 +2,18 @@
 #                                                                              #
 #      IAR Universal Linker V6.3.4.78                                          #
 #                                                                              #
-#           Link time     =  29/Sep/2016  09:02:21                             #
+#           Link time     =  29/Sep/2016  16:09:37                             #
 #           Target CPU    =  MSP430                                            #
-#           List file     =  "F:\Source\IAR MSP\Test\Debug\List\test.map"      #
-#           Output file 1 =  "F:\Source\IAR MSP\Test\Debug\Exe\test.d43"       #
+#           List file     =  "F:\Source\IAR MSP\EnI\Test\Debug\List\test.map"  #
+#           Output file 1 =  "F:\Source\IAR MSP\EnI\Test\Debug\Exe\test.d43"   #
 #                            Format: ubrof10                                   #
 #                            UBROF version 10.0.6                              #
 #                            Using library modules for C-SPY (-rt)             #
-#           Command line  =  "F:\Source\IAR MSP\Test\Debug\Obj\main.r43" -o    #
-#                            "F:\Source\IAR MSP\Test\Debug\Exe\test.d43" -l    #
-#                            "F:\Source\IAR MSP\Test\Debug\List\test.map"      #
+#           Command line  =  "F:\Source\IAR MSP\EnI\Test\Debug\Obj\main.r43"   #
+#                            -o                                                #
+#                            "F:\Source\IAR MSP\EnI\Test\Debug\Exe\test.d43"   #
+#                            -l                                                #
+#                            "F:\Source\IAR MSP\EnI\Test\Debug\List\test.map"  #
 #                            -xms                                              #
 #                            "-IC:\Program Files\IAR Systems\Embedded Workbenc #
 #                            h 7.3\430\LIB\"                                   #
@@ -113,7 +115,7 @@ Absolute parts
            __iar_HWMUL             0130 
     *************************************************************************
 
-  FILE NAME : F:\Source\IAR MSP\Test\Debug\Obj\main.r43
+  FILE NAME : F:\Source\IAR MSP\EnI\Test\Debug\Obj\main.r43
   PROGRAM MODULE, NAME : main
 
   SEGMENTS IN THE MODULE
@@ -130,7 +132,7 @@ DATA16_AN
            WDTCTL_bit              0120 
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: 111E - 1127 (0xa bytes), align: 1
+  Relative segment, address: 111E - 1125 (0x8 bytes), align: 1
   Segment part 3.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
@@ -144,11 +146,11 @@ DATA16_AN
   SEGMENTS IN THE MODULE
   ======================
 <CODE> 1 (was CODE)
-  Relative segment, address: 1130 - 1131 (0x2 bytes), align: 1
+  Relative segment, address: 112E - 112F (0x2 bytes), align: 1
   Segment part 2.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           __DebugBreak            1130            __exit (?__exit)
+           __DebugBreak            112E            __exit (?__exit)
 
     -------------------------------------------------------------------------
   LIBRARY MODULE, NAME : ?__exit
@@ -170,14 +172,14 @@ DATA16_AN
   SEGMENTS IN THE MODULE
   ======================
 <CODE> 1 (was CODE)
-  Relative segment, address: 1128, align: 1
+  Relative segment, address: 1126, align: 1
   Segment part 0.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           _exit                   1128            exit (?exit)
+           _exit                   1126            exit (?exit)
     -------------------------------------------------------------------------
 <CODE> 1 (was CODE)
-  Relative segment, address: 1128 - 112B (0x4 bytes), align: 1
+  Relative segment, address: 1126 - 1129 (0x4 bytes), align: 1
   Segment part 6.             Intra module refs:   _exit
 
     -------------------------------------------------------------------------
@@ -224,11 +226,11 @@ RESET
   SEGMENTS IN THE MODULE
   ======================
 <CODE> 1 (was CODE)
-  Relative segment, address: 112C - 112F (0x4 bytes), align: 1
+  Relative segment, address: 112A - 112D (0x4 bytes), align: 1
   Segment part 2.
            ENTRY                   ADDRESS         REF BY
            =====                   =======         ======
-           exit                    112C            Segment part 18 (?cstart)
+           exit                    112A            Segment part 18 (?cstart)
                calls direct
 
 
@@ -246,7 +248,7 @@ SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
 DATA16_AN                              0120 - 0121               2   rel    0
 CSTACK                                 09B0 - 09FF              50   rel    1
 CSTART                                 1100 - 110B               C   rel    1
-<CODE> 1                               110C - 1131              26   rel    1
+<CODE> 1                               110C - 112F              24   rel    1
 RESET                                  FFFE - FFFF               2   rel    1
 
                 ****************************************
@@ -255,7 +257,7 @@ RESET                                  FFFE - FFFF               2   rel    1
                 *                                      *
                 ****************************************
 
- 52 bytes of CODE memory
+ 50 bytes of CODE memory
  80 bytes of DATA memory (+ 2 absolute )
 
 Errors: none
